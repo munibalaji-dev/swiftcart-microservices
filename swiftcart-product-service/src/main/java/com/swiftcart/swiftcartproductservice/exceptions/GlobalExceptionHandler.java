@@ -23,7 +23,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(InsufficientStock.class)
     public ResponseEntity<String> handleInsufficientStock(InsufficientStock ex1){
         return ResponseEntity
-                .status(HttpStatus.INSUFFICIENT_STORAGE)
+                .status(HttpStatus.CONFLICT)
                 .body(ex1.getMessage());
     }
 
