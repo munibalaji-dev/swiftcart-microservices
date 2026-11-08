@@ -58,7 +58,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(InvalidOrderStatusTransitionException.class)
     public ResponseEntity<String> handleInvalidOrderTransitionException(InvalidOrderStatusTransitionException ex5){
-        return new ResponseEntity<>(ex5.getMessage(), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(ex5.getMessage(), HttpStatus.CONFLICT);
     }
 
 }
