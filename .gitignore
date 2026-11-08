@@ -1,0 +1,11 @@
+
+# Maven build files
+target/
+
+# IntelliJ files
+.idea/
+*.iml
+
+# Environment variables and secrets
+.env
+application-local.properties
